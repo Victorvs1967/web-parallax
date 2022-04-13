@@ -1,0 +1,173 @@
+*, 
+*:before, 
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, 
+ol, 
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, 
+h2, 
+h3,
+h4, 
+h5, 
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html, 
+body {
+  height: 100%;
+  line-height: 1;
+  font-size: 16px;
+  background-color: #0b1d26;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.wrapper {
+  min-height: 100%;
+}
+
+._container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.parallax {
+  min-height: 100vh;
+}
+
+.parallax__body {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.parallax__container {
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+}
+
+.parallax__label {
+  display: flex;
+  align-items: center;
+  margin: 0 0 30px 0;
+  font-size: 18px;
+  letter-spacing: 6px;
+  color: #fbd784;
+}
+
+.parallax__label::before {
+  content: '';
+  height: 1px;
+  flex: 0 0 70px;
+  margin: 0 30px 0 0;
+  background-color: #fbd784;
+}
+
+.parallax__title {
+  font-size: 88px;
+}
+
+.parallax__images {
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  z-index: 1;
+}
+
+.images-parallax {
+
+}
+
+.images-parallax__item {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.images-parallax__clouds,
+.images-parallax__mountains,
+.images-parallax__human {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
+
+.images-parallax__clouds {
+  background: url('../img/clouds.jpg') top / cover no-repeat; 
+  top: 0;
+}
+
+.images-parallax__mountains {
+  background: url('../img/mountains.png') top / cover no-repeat; 
+  top: 15%;
+  z-index: 2;
+}
+
+.images-parallax__human {
+  background: url('../img/human.png') top / cover no-repeat; 
+  top: 45%;
+  z-index: 3;
+}
+
+.content {
+  position: relative;
+  background-color: #0b1d26;
+  z-index: 2;
+}
+
+.content::before {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0px, -100%);
+  content: '';
+  background: linear-gradient(180deg, rgba(11, 29, 30, 0), #0b1d26);
+}
+
+.content__container {
+
+}
+
+.content__title {
+  font-size: 35px;
+  margin: 0 0 30px 0;
+}
+
+.content__text {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.content__text p {
+  margin: 0 0 30px 0;
+}

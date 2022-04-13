@@ -1,0 +1,31 @@
+@media (max-aspect-ratio: 3/2) {
+  .images-parallax__human {
+    background-position: 20% top;
+  }
+
+  .parallax__title {
+    font-size: 72px;
+  }
+}
+
+@media (max-width: 767px) {
+  .parallax__title {
+    font-size: 50px;
+  }
+
+  .parallax__label {
+    font-size: 16px;
+    margin: 0 0 15px 0;
+  }
+}
+
+@media (max-width: 479px) {
+  .parallax__title {
+    font-size: 36px;
+  }
+
+  .parallax__label::before {
+    flex: 0 0 50px;
+    margin: 0 10px 0 0;
+  }
+}
